@@ -1,0 +1,10 @@
+apiVersion: telemetry.kyma-project.io/v1alpha1
+kind: LoggingConfiguration
+metadata:
+  name: loggingconfiguration-sample
+spec:
+  sections:
+    - configuration: |
+        [OUTPUT]
+          Name "null"
+          Match *
